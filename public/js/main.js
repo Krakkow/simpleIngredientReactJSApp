@@ -38720,6 +38720,7 @@ module.exports = warning;
 },{"_process":158}],431:[function(require,module,exports){
 var React = require('react');
 var ListItem = require('./ListItem.jsx');
+var ReactBootstarp = require('react-bootstrap');
 
 var List = React.createClass({
   displayName: 'List',
@@ -38732,7 +38733,7 @@ var List = React.createClass({
 
     return React.createElement(
       'ul',
-      null,
+      { className: 'list-group' },
       this.props.items.map(createItem)
     );
   }
@@ -38740,7 +38741,7 @@ var List = React.createClass({
 
 module.exports = List;
 
-},{"./ListItem.jsx":432,"react":426}],432:[function(require,module,exports){
+},{"./ListItem.jsx":432,"react":426,"react-bootstrap":245}],432:[function(require,module,exports){
 var React = require('react');
 
 var ListItem = React.createClass({

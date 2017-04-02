@@ -1,5 +1,6 @@
 var React = require('react');
 var ListItem = require('./ListItem.jsx');
+var ReactBootstarp = require('react-bootstrap');
 
 var List = React.createClass({
   render: function() {
@@ -8,7 +9,7 @@ var List = React.createClass({
         return <ListItem key={index + text} text={text} />;
       };
 
-      return (<ul>{this.props.items.map(createItem)}</ul>);
+      return (<ul className="list-group">{this.props.items.map(createItem)}</ul>);
   }
 });
 
