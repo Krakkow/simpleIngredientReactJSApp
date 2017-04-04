@@ -1,6 +1,6 @@
 var React = require('react');
 var ListItem = require('./ListItem.jsx');
-var ReactBootstarp = require('react-bootstrap');
+
 
 var List = React.createClass({
   render: function() {
